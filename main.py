@@ -4,6 +4,9 @@ import json
 import argparse
 import tqdm
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from session import Session
 from datasets import load_dataset, load_from_disk
 from utils import prompt_split_humaneval, find_method_name, code_split, build_test_method
